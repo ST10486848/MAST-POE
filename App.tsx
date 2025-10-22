@@ -3,12 +3,15 @@ import { StyleSheet, Text,TextInput, View ,ScrollView , TouchableOpacity,Button,
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from "@react-navigation/native"; 
 import React, { useState } from 'react';
-
-const Stack = createNativeStackNavigator();
 import AddMenu from './screens/AddMenu';
 import HomePage from './screens/HomePage';
 import SelectedItem from './screens/SelectedItems';
-
+const Stack = createNativeStackNavigator();
+export type RootStackParamList = {
+  Home: undefined;
+  Selected: undefined;
+  Add: undefined;
+};
 export default function App() {
   const [meals, setMeals] = useState<any[]>([]);
   const [selectedMeals, setSelectedMeals] = useState<any[]>([]);
@@ -34,11 +37,5 @@ export default function App() {
 }
 
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+
