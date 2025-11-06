@@ -145,7 +145,6 @@ export default function HomePage({ navigation, meals,setMeals, selectedMeals, se
             <TouchableOpacity
               onPress={() => toggleSelect(item)}
             >
-              
               <Text>{item.name}</Text>
               <Text>{item.category}</Text>
               <Text>{item.description}</Text>
