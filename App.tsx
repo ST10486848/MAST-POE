@@ -1,9 +1,7 @@
-import{View,Text,TextInput,ScrollView,TouchableOpacity,Image,Button,StyleSheet,FlatList,}from'react-native';
-
+import{View,StyleSheet}from'react-native';
 import React,{useState} from 'react';
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import styles from './Stylesheets/styles';
-import {Alert} from 'react-native';
 import HomePage from './Screens/HomePage';
 import FilterCourse from './Screens/FilterCourse';
 import AddItems from './Screens/AddItems';

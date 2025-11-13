@@ -1,4 +1,4 @@
-import{View,Text,TextInput,ScrollView,TouchableOpacity,Image,Button,StyleSheet,FlatList,}from'react-native';
+import{View,Text,ScrollView,TouchableOpacity,FlatList,}from'react-native';
 import styles from '../Stylesheets/styles';
 import {Alert} from 'react-native';
 import React,{useState} from 'react';
@@ -36,7 +36,7 @@ const [selectedCategory, setSelectedCategory] = useState<
     </View>
   );
     return(    
-         <View>
+    <ScrollView style={styles.container}>
      <View style={styles.container}>
       <Text style={styles.header}>🍽️ Filter Meals by Course</Text>
 
@@ -76,6 +76,6 @@ const [selectedCategory, setSelectedCategory] = useState<
         <Text style={styles.noMealsText}>No meals found in this category.</Text>
       )}
     </View>
-         </View>
+    </ScrollView>
   );
 }

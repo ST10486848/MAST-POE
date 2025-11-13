@@ -75,10 +75,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginTop: 20,
   },
-  Button:{
-    marginTop:20,
-    color:"#2e898bff"
-  },
+
   header:{
     fontSize:24,
     fontWeight:'bold',
@@ -119,6 +116,6 @@ const styles = StyleSheet.create({
     color: "#777",
     marginTop: 20,
   },
-});
+})
 
 export default styles;

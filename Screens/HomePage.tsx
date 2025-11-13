@@ -1,7 +1,6 @@
 import{View,Text,TextInput,ScrollView,TouchableOpacity,Image,Button,StyleSheet,FlatList,}from'react-native';
 import styles from '../Stylesheets/styles';
 import {Alert} from 'react-native';
-
 import React,{useState} from 'react';
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 export type Meal = {

@@ -1,4 +1,4 @@
-import{View,Text,TextInput,ScrollView,TouchableOpacity,Image,Button,StyleSheet,FlatList,}from'react-native';
+import{View,Text,TextInput,ScrollView,Button}from'react-native';
 import styles from '../Stylesheets/styles';
 import {Alert} from 'react-native';
 import React,{useState} from 'react';
@@ -35,6 +35,7 @@ export default function AddItems({ navigation, meals, setMeals }: Props) {
         navigation.goBack(); // Return to HomePage
       };
     return(    
+        <ScrollView style={styles.container}>
        <View style={styles.container}>
       <Text style={styles.header}>Add a New Meal</Text>
       <TextInput
@@ -64,5 +65,6 @@ export default function AddItems({ navigation, meals, setMeals }: Props) {
       />
       <Button title="Add Meal" onPress={handleAdd} />
     </View>
+    </ScrollView>
     );
 }
