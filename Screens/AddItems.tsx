@@ -37,28 +37,24 @@ export default function AddItems({ navigation, meals, setMeals }: Props) {
     return(    
        <View style={styles.container}>
       <Text style={styles.header}>Add a New Meal</Text>
-
       <TextInput
         placeholder="Name"
         value={name}
         onChangeText={setName}
         style={styles.input}
       />
-
       <TextInput
         placeholder="Description"
         value={description}
         onChangeText={setDescription}
         style={styles.input}
       />
-
       <TextInput
         placeholder="Category (Starter, Main, Dessert)"
         value={category}
         onChangeText={setCategory}
         style={styles.input}
       />
-
       <TextInput
         placeholder="Price"
         keyboardType="numeric"
@@ -66,7 +62,6 @@ export default function AddItems({ navigation, meals, setMeals }: Props) {
         onChangeText={setPrice}
         style={styles.input}
       />
-
       <Button title="Add Meal" onPress={handleAdd} />
     </View>
     );

@@ -39,6 +39,14 @@ export default function App() {
     />
   )}
 </Stack.Screen>
+<Stack.Screen name="FilterCourse">
+  {props => (
+    <FilterCourse
+      {...props}
+      meals={meals}
+    />
+  )}
+</Stack.Screen>
      </Stack.Navigator>
      </NavigationContainer>
   );

@@ -36,7 +36,10 @@ const styles = StyleSheet.create({
     color: "#666",
     marginVertical: 4,
   },
-
+  mealCategory: {
+    marginTop: 5,
+    fontStyle: "italic",
+  },
   mealPrice: {
     fontSize: 16,
     fontWeight: "bold",
@@ -76,13 +79,46 @@ const styles = StyleSheet.create({
     marginTop:20,
     color:"#2e898bff"
   },
-
   header:{
     fontSize:24,
     fontWeight:'bold',
     marginBottom:20,
     textAlign:'left'
-  }
+  },
+  card: {
+    backgroundColor: "#fff",
+    borderRadius: 10,
+    padding: 10,
+    marginVertical: 5,
+    elevation: 2,
+  },
+ filterContainer: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    marginVertical: 10,
+  },
+  filterButton: {
+    paddingVertical: 8,
+    paddingHorizontal: 15,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#555",
+  },
+  selectedButton: {
+    backgroundColor: "#007BFF",
+  },
+  filterText: {
+    color: "#333",
+    fontWeight: "bold",
+  },
+  selectedText: {
+    color: "#fff",
+  },
+  noMealsText: {
+    textAlign: "center",
+    color: "#777",
+    marginTop: 20,
+  },
 });
 
 export default styles;
